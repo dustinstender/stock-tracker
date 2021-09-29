@@ -4,6 +4,6 @@ class Stock < ApplicationRecord
     secret_token: Rails.application.credentials.iex_client[:sandbox_secret_key],
     endpoint: 'https://sandbox.iexapis.com/v1')
 
-    client.price(ticker_symbol)
+    new(ticker:,name:,last_price:)
   end
 end
