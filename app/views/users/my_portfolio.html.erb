@@ -14,32 +14,9 @@
   </div>
 <% end %>
 </div>
-<div class="id">
+<div class="id col-6">
   <%= render 'users/result' %>
 </div>
 <% if !@tracked_stocks.empty? %>
-  <div class="row">
-    <div class="col-9">
-      <table class="table table-bordered table-hover">
-    <thead>
-      <tr>
-        <th scope="col">Ticker</th>
-        <th scope="col">Name</th>
-        <th scope="col">Price</th>
-        <th scope="col">Actions</th>
-      </tr>
-    </thead>
-      <tbody>
-        <tr>
-          <% @tracked_stocks.each do |stock| %>
-          <th scope="row"><%= stock.ticket %></th>
-          <td><%= stock.name %></td>
-          <td><%= stock.last_price %></td>
-          <td><%= "Action Placeholder" %></td>
-          <% end %>
-        </tr>
-      </tbody>
-    </table>
-    </div>
-  </div>
+  <%= render 'stocks/stocks' %>
 <% end %>
