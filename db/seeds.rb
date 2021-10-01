@@ -5,4 +5,5 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Stock.create([{ticket: 'AAPL', name: 'Apple Inc.'}, {ticket: 'TSLA', name: 'Tesla'}, {ticket: 'GOOG', name: 'Alphabet'}])
+User.create(email: 'dustin@yahoo.com', password: '123456')
+Stock.create([{ ticket: 'AAPL', name: 'Apple Inc.'}, {ticket: 'TSLA', name: 'Tesla'}, {ticket: 'GOOG', name: 'Alphabet'}])
